@@ -70,6 +70,7 @@ a:hover {
     max-width: 950px;
     margin: 0 auto;
     padding: 60px 50px;
+    overflow: hidden;
 }
 
 /* Header and Footer 
@@ -165,3 +166,25 @@ footer {
 .education-title {
     font-weight: 600;
 }
+
+/* Media Queries
+-------------------------*/
+@media (min-width: 900px) {
+    .col-narrow {
+      width: 30%;
+      float: left;
+    }
+    .col-wide {
+      width: 70%;
+      float: left;
+      padding-left: 20px;
+    }
+  }
+  @media (max-width: 899px){
+    header {
+      text-align: center;
+    }
+    .img {
+      width: 200px;
+    }
+  }
