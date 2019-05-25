@@ -85,6 +85,7 @@ header, footer {
 header {
     padding-top: 50px;
     position: relative;
+    border-top: solid black;
 }
 
 .download {
@@ -133,6 +134,7 @@ nav a:hover {
 
 footer {
     text-align: center;
+    border-top: solid black;
 }
 
 .contact-info a {
@@ -144,6 +146,7 @@ footer {
 -----------------------------*/
 .work {
     background: #C20114;
+    border-top: solid black;
 }
 
 /* Education
@@ -152,6 +155,7 @@ footer {
     background: linear-gradient(rgba(105, 117, 109, 0.8), rgba(105, 117, 109, 0.5)),
                 url(../images/umd-m.jpg) no-repeat fixed;
     background-size: cover;
+    border-top: solid black;
 }
 
 .education p, .education h3 {
@@ -161,6 +165,7 @@ footer {
     display: inline-block;
     margin: 10px;
     padding: 5px 10px;
+    border: rgb(31, 26, 26) solid;
 }
 
 .education-title {
