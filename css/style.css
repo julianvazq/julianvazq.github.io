@@ -34,14 +34,7 @@ summary {
     
 }
 img {
-   width: 150px;
-   border-radius: 20px;
-   margin-right: 50px;
-   /* position: absolute; */
-   max-width: 100%;
-   float: left;
-   /* left: 50px;
-   top: 20px;  */
+   border-radius: 50%;
 }
 h1, h2 {
     font-family: 'Josefin Sans', sans-serif;
@@ -60,10 +53,6 @@ h2 {
 a {
     color: #C20114;
     text-decoration: none;
-}
-
-a:hover {
-    transform: scale(1.1);
 }
 
 .content-wrap {
@@ -93,7 +82,7 @@ header {
     position: absolute;
     color: black;
     bottom: 0;
-    left: 235px;
+    left: 520px;
     z-index: 0;
 }
 
@@ -142,6 +131,10 @@ footer {
     display: inline-block;
 }
 
+.contact-info a:hover {
+    transform: scale(1.1);
+}
+
 /* Work Experience 
 -----------------------------*/
 .work {
@@ -149,10 +142,22 @@ footer {
     border-top: solid black;
 }
 
+.project-box {
+    background-color: rgb(174, 174, 182);  /* make it a gradiant */
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    float: left;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 8px 8px;
+    background-image: linear-gradient(90deg, rgb(180, 176, 176), rgb(99, 99, 93));
+}
+
 /* Education
 -----------------------------*/
 .education {
-    background: linear-gradient(rgba(105, 117, 109, 0.8), rgba(105, 117, 109, 0.5)),
+    background: linear-gradient(rgba(152, 155, 153, 0.8), rgba(143, 148, 144, 0.5)),
                 url(../images/umd-m.jpg) no-repeat fixed;
     background-size: cover;
     border-top: solid black;
