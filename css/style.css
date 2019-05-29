@@ -53,6 +53,7 @@ h2 {
 a {
     color: #C20114;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .content-wrap {
@@ -87,13 +88,21 @@ header {
 }
 
 .download:hover {
-    color: #C20114;
-    background: rgba(66, 53, 53, 0.356);
+    opacity: 0.5;
     }
 
 header h1, header h2 {
     color: #C7D6D5;
     margin: 0;
+}
+
+header .content-wrap a {
+    color: #C7D6D5;
+    text-decoration: underline;
+}
+
+header .content-wrap a:hover {
+    text-decoration: none;
 }
 
 /* Navigation
@@ -132,13 +141,13 @@ footer {
 }
 
 .contact-info a:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /* Work Experience 
 -----------------------------*/
 .work {
-    background: #C20114;
+    background: rgb(194, 1, 20);
     border-top: solid black;
 }
 
@@ -157,6 +166,10 @@ footer {
 .project-box a {
     font-weight: bold;
     text-decoration: underline;
+}
+
+.project-box a:hover {
+    text-decoration: none;
 }
 
 /* Education
@@ -182,6 +195,16 @@ footer {
     font-weight: 600;
 }
 
+.education a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.education a:hover {
+    text-decoration: none;
+}
+
 /* Media Queries
 -------------------------*/
 @media (min-width: 900px) {
@@ -201,5 +224,7 @@ footer {
     }
     .img {
       width: 200px;
+      border-radius: 20px;
+      margin-bottom: 5px;
     }
   }
