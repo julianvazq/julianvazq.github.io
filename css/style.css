@@ -32,8 +32,9 @@ body {
 img {
    border-radius: 50%;
 }
-h1, h2 {
-    font-family: 'Josefin Sans', sans-serif;
+
+h1, h2, h3 {
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 h1 {
@@ -167,6 +168,10 @@ footer {
     border-top: solid black;
 }
 
+.project h3 {
+    font-size: 1.5em;
+}
+
 .project-box {
     padding: 10px;
     margin: 10px;
@@ -256,11 +261,11 @@ footer {
         text-decoration: none;
     }
 
-    .git-button {
+    .project-button {
         position: relative;
         top: 60px;
         color: black;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
         border:2px solid black;
         padding: 10px 10px 10px 10px;
         font-size: 1em;
@@ -271,7 +276,7 @@ footer {
         transition-duration: .5s;
     }
     
-    .git-button:hover {
+    .project-button:hover {
         color: rgb(180, 176, 176);
         background-color: black;
         cursor: pointer;
