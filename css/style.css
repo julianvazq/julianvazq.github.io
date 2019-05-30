@@ -227,6 +227,7 @@ footer {
 }
 
 .education-title {
+    font-size: 1.2em;
     font-weight: 600;
 }
 
@@ -352,6 +353,36 @@ footer {
 
     #toggle:checked + .menu {
         display: block;
+    }
+  }
+
+  @media (max-width: 400px) {
+      h1 {
+          font-size: 40px;
+      }
+
+      h2 {
+          font-size: 25px;
+      }
+
+      .header p {
+          font-size: .9em;
+      }
+
+      .project h3 {
+        font-size: 1.2em;
+    }
+
+    .project p, .project li{
+        font-size: .9em;
+    }
+
+    .project-box a {
+        font-size: 1em;
+    }
+
+    .education h3, .education p {
+        font-size: 1em;
     }
 
   }
