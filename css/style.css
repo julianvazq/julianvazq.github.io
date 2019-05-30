@@ -295,15 +295,22 @@ footer {
         font-size: 30px;
     }
 
+    /* nav a {
+        padding: 5px 20px;
+    } */
+
     label {
         display: block;
         cursor: pointer;
+        height: 50px;
+        line-height: 2;
     }
 
     .menu {
         text-align: center;
         width: 100%;
         display: none;
+        line-height: 40px;
     }
 
     .menu a {
