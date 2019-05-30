@@ -215,8 +215,9 @@ footer {
 -----------------------------*/
 .education {
     background: linear-gradient(rgba(152, 155, 153, 0.8), rgba(143, 148, 144, 0.5)),
-                url(../images/umd-m.jpg) no-repeat fixed;
+                url(../images/umd-m.jpg);
     background-size: cover;
+    background-position: center;
     border-top: solid black;
 }
 
@@ -259,6 +260,13 @@ footer {
       padding-left: 20px;
     }
 
+    .education {
+    background: linear-gradient(rgba(152, 155, 153, 0.8), rgba(143, 148, 144, 0.5)),
+    url(../images/umd-m.jpg) fixed no-repeat;
+    background-size: cover;
+    border-top: solid black;
+    }
+
   }
   @media (max-width: 899px){
 
@@ -278,7 +286,7 @@ footer {
   }
 
   @media (max-width: 635px){
-
+    
     h1 {
         font-size: 50px;
     }
