@@ -57,14 +57,14 @@ a {
 }
 
 .content-wrap {
-    max-width: 950px;
+    max-width: 890px;
     margin: 0 auto;
-    padding: 30px 50px;
+    padding: 60px 50px;
     overflow: hidden;
 }
 
-.content-wrap:first-of-type {
-    max-width: 900px;
+.project .content-wrap, .education .content-wrap, footer .content-wrap {
+    max-width: 1200px;
 }
 
 /* Header and Footer 
@@ -166,7 +166,7 @@ footer {
 
 /* Work Experience 
 -----------------------------*/
-.work {
+.project {
     background: linear-gradient(90deg, rgb(194, 1, 20), #696464, rgb(194, 1, 20));
     border-top: solid black;
 }
@@ -294,10 +294,6 @@ footer {
     h2 {
         font-size: 30px;
     }
-
-    /* nav a {
-        padding: 5px 20px;
-    } */
 
     label {
         display: block;
