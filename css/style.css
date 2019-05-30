@@ -59,8 +59,12 @@ a {
 .content-wrap {
     max-width: 950px;
     margin: 0 auto;
-    padding: 60px 50px;
+    padding: 30px 50px;
     overflow: hidden;
+}
+
+.content-wrap:first-of-type {
+    max-width: 900px;
 }
 
 /* Header and Footer 
@@ -117,11 +121,27 @@ nav {
 }
 
 nav a {
+    clear: right;
     display: inline-block;
     padding: 15px 20px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+label {
+    color: black;
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    text-align: right;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+#toggle {
+    display: none;
 }
 
 nav a:hover {
@@ -147,7 +167,7 @@ footer {
 /* Work Experience 
 -----------------------------*/
 .work {
-    background: rgb(194, 1, 20);
+    background: linear-gradient(90deg, rgb(194, 1, 20), #696464, rgb(194, 1, 20));
     border-top: solid black;
 }
 
@@ -157,19 +177,38 @@ footer {
     margin: 10px;
     width: 100%;
     float: left;
-    width: 100%;
     border-radius: 30px;
-    box-shadow: 8px 8px;
-    background-image: linear-gradient(90deg, rgb(180, 176, 176), rgb(99, 99, 93));
+    /* background: linear-gradient(90deg, rgb(180, 176, 176), rgb(99, 99, 93)); */
+    background: linear-gradient(90deg, rgb(99, 99, 93), rgb(180, 176, 176), rgb(99, 99, 93));
+    border: black solid 2px;
+}
+
+.center {
+    text-align: center;
+}
+
+.project-box:focus,
+.project-box:hover {
+    /* margin: 2px; */
+    position: relative;
+    top: 2px;
+    left: 2px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.8);
+    transition: 0.1s;
 }
 
 .project-box a {
+    color: rgb(114, 5, 65);
     font-weight: bold;
     text-decoration: underline;
 }
 
 .project-box a:hover {
     text-decoration: none;
+}
+
+.vl {
+    border-left: black solid;
 }
 
 /* Education
@@ -208,23 +247,68 @@ footer {
 /* Media Queries
 -------------------------*/
 @media (min-width: 900px) {
+
     .col-narrow {
       width: 30%;
       float: left;
     }
+
     .col-wide {
       width: 70%;
       float: left;
       padding-left: 20px;
     }
+
   }
   @media (max-width: 899px){
+
     header {
       text-align: center;
+      
     }
     .img {
       width: 200px;
-      border-radius: 20px;
+      border-radius: 50px;
       margin-bottom: 5px;
+    }
+
+    .vl {
+        border-left: none;
+    }
+  }
+
+  @media (max-width: 635px){
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .menu a {
+        display: block;
+        border-bottom: black solid;
+        margin: 0;
+    }
+
+    .menu a:first-of-type {
+        border-top: black solid;
+    }
+
+    #toggle:checked + .menu {
+        display: block;
     }
   }
