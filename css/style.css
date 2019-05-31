@@ -200,13 +200,25 @@ footer {
 }
 
 .project-box a {
-    color: rgb(114, 5, 65);
+    color: #c20114d1;
     font-weight: bold;
-    text-decoration: underline;
 }
 
 .project-box a:hover {
     text-decoration: none;
+}
+
+.project-button {
+    font-family: 'Roboto Condensed', sans-serif;
+    border: 2px solid #ECEBF3;
+    background: #ECEBF3;
+    padding: 5px;
+    font-size: 1em;
+    border-radius:5px;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
 }
 
 .vl {
@@ -278,8 +290,9 @@ footer {
         position: relative;
         top: 60px;
         color: black;
+        background: none;
         font-family: 'Roboto Condensed', sans-serif;
-        border:2px solid black;
+        border: 2px solid black;
         padding: 10px 10px 10px 10px;
         font-size: 1em;
         border-radius:5px;
