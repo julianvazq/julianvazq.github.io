@@ -21,6 +21,10 @@ body {
     margin: 0;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 .btn {
     text-decoration: none;
     background: #C7D6D5;
@@ -330,7 +334,17 @@ footer {
   @media (max-width: 635px){
     
      .project .content-wrap {
-        padding: 60px 10px;
+        padding: 60px 0px;
+    }
+
+    .project .project-box {
+        border-radius: 0%;
+        /* border-left: none;
+        border-right: none; */
+    }
+
+    .project .content-wrap h2 {
+        text-align: center;
     }
 
     .education .content-wrap {
