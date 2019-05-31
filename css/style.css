@@ -174,11 +174,12 @@ footer {
 
 .project-box {
     padding: 10px;
-    margin: 10px;
+    margin: 10px auto;
     width: 100%;
     float: left;
     border-radius: 30px;
-    background: linear-gradient(90deg, rgb(99, 99, 93), rgb(180, 176, 176), rgb(99, 99, 93));
+    /* background: linear-gradient(90deg, rgb(99, 99, 93), rgb(180, 176, 176), rgb(99, 99, 93)); */
+    background: linear-gradient(180deg, rgb(99, 99, 93), rgb(173, 164, 164));
 }
 
 .center {
@@ -219,6 +220,7 @@ footer {
 .education p, .education h3 {
     background: rgb(53, 53, 53);
     border-radius: 20px;
+    min-width: 260px;
     color: white;
     display: inline-block;
     margin: 10px;
@@ -254,6 +256,11 @@ footer {
       width: 70%;
       float: left;
       padding-left: 20px;
+      transform: scaleY(1.055);
+    }
+
+    .project-box {
+        background: linear-gradient(90deg, rgb(99, 99, 93) 30.6%, rgb(173, 164, 164) 30.6%);
     }
 
     .project-box a {
@@ -319,6 +326,10 @@ footer {
 
   @media (max-width: 635px){
     
+     .project .content-wrap {
+        padding: 60px 10px;
+    }
+
     h1 {
         font-size: 50px;
     }
