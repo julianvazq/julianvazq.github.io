@@ -60,7 +60,7 @@ a {
 .content-wrap {
     max-width: 890px;
     margin: 0 auto;
-    padding: 60px 50px;
+    padding: 20px 50px;
     overflow: hidden;
 }
 
@@ -347,13 +347,17 @@ footer {
   @media (max-width: 635px){
     
      .project .content-wrap {
-        padding: 60px 0px;
+        padding: 20px 0px;
+        margin: 0 auto;
+    }
+
+    header .content-wrap {
+        padding: 20px 10px;
+        text-align: center;
     }
 
     .project .project-box {
         border-radius: 0%;
-        /* border-left: none;
-        border-right: none; */
     }
 
     .project .content-wrap h2 {
@@ -361,7 +365,7 @@ footer {
     }
 
     .education .content-wrap {
-        padding: 60px 10px;
+        padding: 20px 10px;
         text-align: center;
     }
 
@@ -411,8 +415,14 @@ footer {
           font-size: 25px;
       }
 
-      .header p {
+      /* .header p {
           font-size: .9em;
+      } */
+
+      .header .col-wide {
+          font-size: .9em;
+          margin: 0; 
+          padding: 0;
       }
 
       .project h3 {
