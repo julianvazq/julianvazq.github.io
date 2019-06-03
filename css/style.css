@@ -388,6 +388,10 @@ footer {
         font-size: 30px;
     }
 
+    nav a:hover {
+        color: #C20114;
+    }
+
     label {
         display: block;
         cursor: pointer;
