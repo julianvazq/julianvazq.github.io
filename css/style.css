@@ -346,6 +346,11 @@ footer {
         color: #ECEBF3;
     }
 
+    .education .content-wrap {
+        /* padding: 20px 10px; */
+        text-align: center;
+    }
+
   }
 
   @media (max-width: 635px){
@@ -377,7 +382,6 @@ footer {
 
     .education .content-wrap {
         padding: 20px 10px;
-        text-align: center;
     }
 
     h1 {
