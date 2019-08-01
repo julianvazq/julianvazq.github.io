@@ -306,6 +306,11 @@ figure {
   transition-delay: 0.4s;
 }
 
+.fig-hover-effect {
+  transform: translate3d(0, 0, 0);
+  transition-delay: 0.4s;
+}
+
 figcaption {
   position: absolute;
   width: 100%;
