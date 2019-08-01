@@ -210,7 +210,7 @@ footer {
   width: 100%;
   float: left;
   border-radius: 30px;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgb(194, 1, 20);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
@@ -223,12 +223,13 @@ footer {
 }
 
 .project-button {
-  color: #c7d6d5;
-  font-weight: bold;
+  color: black;
+  background: none;
   font-family: "Roboto Condensed", sans-serif;
-  border: 2px solid #c7d6d5;
-  padding: 0.5em;
+  border: 2px solid black;
+  padding: 10px 10px 10px 10px;
   font-size: 1em;
+  border-radius: 5px;
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.5s;
@@ -236,8 +237,13 @@ footer {
 }
 
 .project-button:hover {
-  color: rgb(194, 1, 20);
-  background: #c7d6d5;
+  color: rgb(180, 176, 176);
+  background-color: black;
+  cursor: pointer;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
 .vl {
@@ -323,7 +329,8 @@ figcaption {
   transition: transform 0.35s;
   -webkit-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
-  box-shadow: inset 0px -1px 20px 2px rgb(47, 47, 47);
+  /* box-shadow: inset 0px -1px 20px 2px rgb(47, 47, 47); */
+  border-bottom: #c7d6d5 solid 1px;
 }
 
 figcaption a {
@@ -478,32 +485,6 @@ header p a::after {
     text-decoration: none;
   }
 
-  .project-button {
-    position: relative;
-    top: 60px;
-    color: black;
-    background: none;
-    font-family: "Roboto Condensed", sans-serif;
-    border: 2px solid black;
-    padding: 10px 10px 10px 10px;
-    font-size: 1em;
-    border-radius: 5px;
-    -webkit-transition-property: all;
-    transition-property: all;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-  }
-
-  .project-button:hover {
-    color: rgb(180, 176, 176);
-    background-color: black;
-    cursor: pointer;
-    -webkit-transition-property: all;
-    transition-property: all;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-  }
-
   .education {
     background: linear-gradient(
         rgba(152, 155, 153, 0.8),
@@ -519,9 +500,52 @@ header p a::after {
     font-size: 16px;
   }
 
+  .project-box {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    color: #c7d6d5;
+    padding: 1em;
+  }
+
   .project-box .col-wide {
     margin-top: 2em;
   }
+
+  .general-projects h4 {
+    margin: 0 0 2.2em 0;
+    position: relative;
+  }
+
+  .general-projects h4::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 3px;
+    background: #c7d6d5;
+    margin: 1em 0;
+    position: absolute;
+    left: 25%;
+  }
+
+  .project-button {
+    /* color: #c7d6d5; */
+    color: rgb(194, 1, 20);
+    background: #c7d6d5;
+    box-shadow: 1px 3px 12px -1px #000000;
+    font-weight: bold;
+    font-family: "Roboto Condensed", sans-serif;
+    border: 2px solid #c7d6d5;
+    padding: 0.5em;
+    font-size: 1em;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+
+  /* .project-button:hover {
+    color: rgb(194, 1, 20);
+    background: #c7d6d5;
+  } */
 
   header {
     text-align: center;
@@ -533,11 +557,6 @@ header p a::after {
 
   .vl {
     border-left: none;
-  }
-
-  .project-box {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    color: #c7d6d5;
   }
 
   .education .content-wrap {
@@ -603,7 +622,7 @@ header p a::after {
   .project .project-box {
     border-radius: 0%;
     width: auto;
-    margin: 1.5em 1em;
+    margin: 1.5em 0;
   }
 
   .project .content-wrap h2,
