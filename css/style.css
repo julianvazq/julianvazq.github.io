@@ -297,7 +297,7 @@ footer {
   z-index: -1;
 }
 
-/* TESTING WEB PROJECT BOX HOVER EFFECT */
+/* WEB PROJECT BOX HOVER EFFECT */
 
 figure {
   margin: 0;
@@ -360,7 +360,6 @@ figure h5 i {
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
   transform: translate3d(0, 0, 0);
-  /* -webkit-backface-visibility: hidden; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -530,7 +529,7 @@ header p a::after {
     /* color: #c7d6d5; */
     color: rgb(194, 1, 20);
     background: #c7d6d5;
-    box-shadow: 1px 3px 12px -1px #000000;
+    box-shadow: 1px 3px 14px -5px #000000;
     font-weight: bold;
     font-family: "Roboto Condensed", sans-serif;
     border: 2px solid #c7d6d5;
@@ -654,9 +653,13 @@ header p a::after {
   }
 
   .menu {
+    /* display: none; */
     text-align: center;
     width: 100%;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+    height: 0;
   }
 
   .menu a {
@@ -669,7 +672,10 @@ header p a::after {
   }
 
   #toggle:checked + .menu {
-    display: block;
+    /* display: block; */
+    visibility: visible;
+    opacity: 1;
+    height: auto;
   }
 }
 
