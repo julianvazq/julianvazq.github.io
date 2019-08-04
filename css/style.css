@@ -128,15 +128,28 @@ header .content-wrap a:hover {
 /* Navigation
   -----------------------------*/
 nav {
+  --background: #ecebf3;
+  --links: #c20114;
+  --hover: #0c120c;
+
   text-align: center;
-  background: #ecebf3;
+  background: var(--background);
+  transition: background 0.4s ease-in;
+  color: var(--links);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 100;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-scrolled {
+  --background: #0c120c;
+  --hover: #ecebf3;
 }
 
 nav a {
+  color: inherit;
   clear: right;
   display: inline-block;
   padding: 15px 20px;
@@ -146,7 +159,7 @@ nav a {
 }
 
 label {
-  color: black;
+  color: var(--links);
   margin: 0 40px 0 0;
   font-size: 26px;
   line-height: 70px;
@@ -161,7 +174,7 @@ label {
 }
 
 nav a:hover {
-  color: #0c120c;
+  color: var(--hover);
 }
 
 /*Footer */
@@ -210,7 +223,7 @@ footer {
   width: 100%;
   float: left;
   border-radius: 30px;
-  background: rgb(194, 1, 20);
+  background: rgba(194, 1, 20, 0.6);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
@@ -667,8 +680,15 @@ header p a::after {
     margin: 0;
   }
 
-  .menu a:nth-of-type(odd) {
-    background: #0c120c;
+  .menu a::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #c20114;
+    position: absolute;
+    left: calc(50% - 15px);
+    margin-top: 0.2em;
   }
 
   #toggle:checked + .menu {
