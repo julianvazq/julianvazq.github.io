@@ -143,6 +143,7 @@ nav {
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Switches color codes on scroll + JS */
 .nav-scrolled {
   --background: #0c120c;
   --hover: #ecebf3;

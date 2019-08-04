@@ -1,8 +1,10 @@
-//Nav change theme on scroll
+//Nav change theme color on scroll
 const nav = document.querySelector("nav");
 const header = document.querySelector("header");
 
-const options = { rootMargin: "-100px 0px 0px 0px" };
+const options = {
+  // rootMargin: "-100px 0px 0px 0px"
+};
 
 const observer = new IntersectionObserver(function(entries) {
   entries.forEach(entry => {
