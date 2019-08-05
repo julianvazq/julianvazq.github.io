@@ -197,8 +197,15 @@ footer {
 /* Work Experience 
   -----------------------------*/
 .project {
-  background: linear-gradient(90deg, rgb(194, 1, 20), #696464, rgb(194, 1, 20));
+  /* background: linear-gradient(90deg, rgb(194, 1, 20), #696464, rgb(194, 1, 20)); */
   border-top: solid black;
+  background-image: linear-gradient(
+    68.8deg,
+    rgba(66, 21, 21, 0.95) 1.8%,
+    #c20114 31.8%,
+    rgba(0, 0, 0, 0.71) 56.2%,
+    #c20114 89%
+  );
 }
 
 .project h3 {
@@ -298,6 +305,12 @@ footer {
   filter: brightness(0.1);
   transition: 0.5s ease-in, 0.5s ease-out;
 }
+
+.web-project-box-scroll {
+  filter: brightness(0.1);
+  transition: 0.5s ease-in, 0.5s ease-out;
+}
+
 .web-project-box:hover a {
   opacity: 1;
   transition: 0.3s ease-in 0.3s, 0.3s ease-out 0.3s;
@@ -381,6 +394,11 @@ figure h5 i {
 }
 
 .web-project-box:hover .demo-code {
+  opacity: 1;
+  transition: 0.3s ease-in 1s, 0.3s ease-out 1s;
+}
+
+.demo-code-scroll {
   opacity: 1;
   transition: 0.3s ease-in 1s, 0.3s ease-out 1s;
 }
@@ -517,6 +535,14 @@ header p a::after {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     color: #c7d6d5;
     padding: 1em;
+    background-image: linear-gradient(
+      110.4deg,
+      rgb(95, 101, 84) 2.5%,
+      #c51728 37.2%,
+      rgb(23, 124, 181) 66.4%,
+      rgb(21, 21, 21) 97.6%
+    );
+    position: relative;
   }
 
   .project-box .col-wide {
@@ -554,11 +580,6 @@ header p a::after {
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
   }
-
-  /* .project-button:hover {
-    color: rgb(194, 1, 20);
-    background: #c7d6d5;
-  } */
 
   header {
     text-align: center;
