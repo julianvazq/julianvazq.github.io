@@ -1,22 +1,27 @@
 //Nav change theme color on scroll
-const nav = document.querySelector("nav");
-const header = document.querySelector("header");
+if (
+  document.documentElement.clientWidth > 900 &&
+  "IntersectionObserver" in window
+) {
+  const nav = document.querySelector("nav");
+  const header = document.querySelector("header");
 
-const options = {
-  // rootMargin: "-100px 0px 0px 0px"
-};
+  const options = {
+    rootMargin: "-100px 0px 0px 0px"
+  };
 
-const observer = new IntersectionObserver(function(entries) {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) {
-      nav.classList.add("nav-scrolled");
-    } else {
-      nav.classList.remove("nav-scrolled");
-    }
-  });
-}, options);
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) {
+        nav.classList.add("nav-scrolled");
+      } else {
+        nav.classList.remove("nav-scrolled");
+      }
+    });
+  }, options);
 
-observer.observe(header);
+  observer.observe(header);
+}
 
 //Web project box hover effects on mobile (screen width < 900)
 if (document.documentElement.clientWidth < 900) {
