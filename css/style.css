@@ -628,6 +628,10 @@ header p a::after {
     width: 100%;
   }
 
+  .overlay {
+    border-radius: 0px;
+  }
+
   .project h3::after {
     width: 50%;
     height: 3px;
