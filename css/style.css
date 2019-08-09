@@ -196,7 +196,7 @@ footer {
   -----------------------------*/
 .project {
   border-top: solid black;
-  background-image: linear-gradient(20deg, #236d7d 40%, #da0101 100%);
+  background-image: linear-gradient(20deg, #236d7d 40%, #c20114 100%);
 }
 
 .project h3 {
@@ -736,6 +736,7 @@ header p a::after {
     cursor: pointer;
     height: 50px;
     line-height: 2;
+    color: inherit;
   }
 
   .menu {
@@ -751,6 +752,7 @@ header p a::after {
   .menu a {
     display: block;
     margin: 0;
+    position: relative;
   }
 
   .menu a::after {
