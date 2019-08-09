@@ -125,6 +125,7 @@ nav {
   text-align: center;
   background: var(--background);
   transition: background 0.4s ease-in;
+  transition: color 0.4s ease-in;
   color: var(--links);
   position: fixed;
   top: 0;
@@ -133,10 +134,15 @@ nav {
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Switches color codes on scroll + JS */
+/* Switches color codes on scroll using JavaScript */
 .nav-scrolled {
   --background: #0c120c;
   --hover: #ecebf3;
+}
+
+/* Changes color when scroll to GENERAL PROJECTS using JavaScript */
+.nav-scrolled-projects {
+  color: #236d7d;
 }
 
 nav a {
@@ -190,17 +196,15 @@ footer {
   -----------------------------*/
 .project {
   border-top: solid black;
-  background-image: linear-gradient(
-    68.8deg,
-    rgba(66, 21, 21, 0.95) 1.8%,
-    #c20114 31.8%,
-    rgba(0, 0, 0, 0.71) 56.2%,
-    #c20114 89%
-  );
+  background-image: linear-gradient(20deg, #236d7d 40%, #da0101 100%);
 }
 
 .project h3 {
   font-size: 1.8em;
+}
+
+.general-projects {
+  overflow: auto;
 }
 
 .general-projects h4 {

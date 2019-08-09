@@ -2,6 +2,7 @@
 if ("IntersectionObserver" in window) {
   const nav = document.querySelector("nav");
   const header = document.querySelector("header");
+  const otherProjects = document.querySelector(".general-projects");
 
   const navOptions = {
     rootMargin: "-100px 0px 0px 0px"
@@ -18,6 +19,24 @@ if ("IntersectionObserver" in window) {
   }, navOptions);
 
   observerNav.observe(header);
+
+  /* Change nav color when scroll over GENERAL PROJECTS */
+  const projOptions = {
+    rootMargin: "0px 0px 0px 0px",
+    threshold: 0.2
+  };
+
+  const observerProject = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        nav.classList.add("nav-scrolled-projects");
+      } else {
+        nav.classList.remove("nav-scrolled-projects");
+      }
+    });
+  }, projOptions);
+
+  observerProject.observe(otherProjects);
 
   if (document.documentElement.clientWidth < 636) {
     const boxOptions = {
