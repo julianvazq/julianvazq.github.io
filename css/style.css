@@ -205,6 +205,8 @@ footer {
 
 .general-projects h4 {
   font-size: 1.5em;
+  margin: -0.33em 0 2em 0;
+  padding: 0;
 }
 
 .project h3::after {
@@ -219,7 +221,7 @@ footer {
 .project-box {
   color: white;
   position: relative;
-  padding: 0.6em;
+  padding: 2em;
   margin: 1.5em auto;
   width: 100%;
   float: left;
@@ -240,6 +242,38 @@ footer {
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 30px;
   z-index: -1;
+}
+
+.project-box p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.project-box ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding: 0 0 0 1.5em;
+}
+
+.project-box li {
+  line-height: 2;
+  position: relative;
+  display: flex;
+  align-items: start;
+  padding-left: 0.5em;
+  padding: 0.3em 0 0 0.5em;
+}
+
+.project-box li::before {
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-size: 1.5rem;
+  position: absolute;
+  top: -0.1em;
+  left: -1em;
 }
 
 /* MySQL Card */
@@ -361,7 +395,7 @@ footer {
 }
 
 .web-project-box h4 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   padding: 0.5em;
   margin: 0;
   position: relative;
@@ -547,7 +581,7 @@ header p a::after {
   .col-wide {
     width: 70%;
     float: left;
-    padding-left: 20px;
+    padding-left: 1.5em;
     transform: scaleY(1.055);
   }
 
@@ -567,7 +601,11 @@ header p a::after {
   }
 
   .project-box .col-wide {
-    margin-top: 2em;
+    margin: 2em auto 0 auto;
+  }
+
+  .project-box p {
+    text-align: center;
   }
 
   .general-projects h4 {
@@ -743,23 +781,5 @@ header p a::after {
     font-size: 0.9em;
     margin: 0;
     padding: 0;
-  }
-
-  .general-projects h4 {
-    font-size: 1.2em;
-  }
-
-  .project p,
-  .project li {
-    font-size: 0.9em;
-  }
-
-  .project-box a {
-    font-size: 1em;
-  }
-
-  .education h3,
-  .education p {
-    font-size: 1em;
   }
 }
