@@ -228,6 +228,7 @@ footer {
 }
 
 .project-box {
+  color: white;
   position: relative;
   padding: 0.6em;
   margin: 1.5em auto;
@@ -236,43 +237,95 @@ footer {
   border-radius: 30px;
   background: rgba(194, 1, 20, 0.6);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  z-index: 1;
+}
+
+.project-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 30px;
+  z-index: -1;
+}
+
+/* MySQL Card */
+.project-box:nth-child(2) {
+  background-image: url(../images/database.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* Python Web Crawler Card */
+.project-box:nth-child(3) {
+  background-image: url(../images/python.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Stats Card */
+.project-box:nth-child(4) {
+  background-image: url(../images/stats.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* UX Card */
+.project-box:last-child {
+  background-image: url(../images/ux.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .center {
   text-align: center;
 }
 
-.project-box a:hover {
-  text-decoration: none;
-}
-
 .project-button {
   color: black;
   background: none;
   font-family: "Roboto Condensed", sans-serif;
-  border: 2px solid black;
-  padding: 10px 10px 10px 10px;
+  font-weight: bold;
+  border: 2px solid white;
+  padding: 10px;
   font-size: 1em;
   border-radius: 5px;
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
+  position: relative;
+  mix-blend-mode: screen;
+  letter-spacing: 0.1em;
+}
+
+.project-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: white;
+  mix-blend-mode: color-burn;
 }
 
 .project-button:hover,
 .project-button:focus {
-  color: rgb(180, 176, 176);
+  color: white;
   background-color: black;
   cursor: pointer;
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
-}
-
-.vl {
-  border-left: black solid;
 }
 
 .web-projects-title {
@@ -513,20 +566,6 @@ header p a::after {
     transform: scaleY(1.055);
   }
 
-  .project-box {
-    background: linear-gradient(
-      90deg,
-      rgb(99, 99, 93) 30.6%,
-      rgb(173, 164, 164) 30.6%
-    );
-  }
-
-  .project-box a {
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-  }
-
   .education {
     background: linear-gradient(
         rgba(152, 155, 153, 0.8),
@@ -540,28 +579,6 @@ header p a::after {
 @media (max-width: 899px) {
   html {
     font-size: 16px;
-  }
-
-  .project-box {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    color: #c7d6d5;
-    padding: 1em;
-    background-image: linear-gradient(
-      110.4deg,
-      rgb(95, 101, 84) 2.5%,
-      #c51728 37.2%,
-      rgb(23, 124, 181) 66.4%,
-      rgb(21, 21, 21) 97.6%
-    );
-    position: relative;
-  }
-
-  .overlay {
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2);
-    padding: inherit;
-    border-radius: 30px;
   }
 
   .project-box .col-wide {
@@ -584,22 +601,6 @@ header p a::after {
     left: 25%;
   }
 
-  .project-button {
-    /* color: #c7d6d5; */
-    color: rgb(194, 1, 20);
-    background: #c7d6d5;
-    box-shadow: 1px 3px 14px -5px #000000;
-    font-weight: bold;
-    font-family: "Roboto Condensed", sans-serif;
-    border: 2px solid #c7d6d5;
-    padding: 0.5em;
-    font-size: 1em;
-    -webkit-transition-property: all;
-    transition-property: all;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-  }
-
   header {
     text-align: center;
   }
@@ -608,8 +609,8 @@ header p a::after {
     margin-bottom: 5px;
   }
 
-  .vl {
-    border-left: none;
+  .project-box::before {
+    display: none;
   }
 
   .education .content-wrap {
@@ -624,12 +625,12 @@ header p a::after {
 }
 
 @media (max-width: 635px) {
-  .web-project-box {
-    width: 100%;
+  .project-box::after {
+    border-radius: 0;
   }
 
-  .overlay {
-    border-radius: 0px;
+  .web-project-box {
+    width: 100%;
   }
 
   .project h3::after {
