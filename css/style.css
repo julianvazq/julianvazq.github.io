@@ -108,11 +108,10 @@ header h2 {
 
 header .content-wrap a {
   color: #c7d6d5;
-  text-decoration: underline;
 }
 
 header .content-wrap a:hover {
-  text-decoration: none;
+  opacity: 0.6;
 }
 
 /* Navigation
