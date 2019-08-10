@@ -125,7 +125,6 @@ nav {
   text-align: center;
   background: var(--background);
   transition: background 0.4s ease-in;
-  transition: color 0.4s ease-in;
   color: var(--links);
   position: fixed;
   top: 0;
@@ -134,15 +133,10 @@ nav {
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Switches color codes on scroll using JavaScript */
+/* Switches color codes on scroll + JS */
 .nav-scrolled {
   --background: #0c120c;
   --hover: #ecebf3;
-}
-
-/* Changes color when scroll to GENERAL PROJECTS using JavaScript */
-.nav-scrolled-projects {
-  color: #236d7d;
 }
 
 nav a {
@@ -201,10 +195,6 @@ footer {
 
 .project h3 {
   font-size: 1.8em;
-}
-
-.general-projects {
-  overflow: auto;
 }
 
 .general-projects h4 {
@@ -531,39 +521,68 @@ figure h5 i {
   border-top: solid black;
 }
 
+.education .content-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
 .education p,
-.education h3 {
-  background: rgb(53, 53, 53);
-  border-radius: 20px;
-  color: white;
+.education-title {
   display: inline-block;
-  margin: 10px;
-  padding: 5px 10px;
-  border: rgb(31, 26, 26) solid;
+  border-radius: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.education p {
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 1.2em;
+  font-weight: bold;
 }
 
 .education-title {
-  font-size: 1.2em;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 1.5rem;
   font-weight: 600;
+  position: relative;
+  letter-spacing: 0.1em;
+  z-index: 1;
+  padding: 1em;
+}
+
+.education-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../images/maryland-flag.png);
+  background-position: center;
+  background-size: cover;
+  mix-blend-mode: color-burn;
+  z-index: -1;
+  border-radius: 20px;
 }
 
 .education a {
-  color: #ecebf3;
+  color: #c20114;
   font-weight: bold;
-  text-decoration: underline;
 }
 
 .education a::after,
 header p a::after {
   content: "\f35d";
   font-family: "Font Awesome 5 Free";
-  padding-left: 0.3em;
+  padding-left: 0.4em;
   font-weight: bold;
 }
 
 .education a:hover,
 .education a:focus {
-  text-decoration: none;
+  opacity: 0.7;
 }
 
 /* Media Queries
@@ -716,6 +735,7 @@ header p a::after {
   }
 
   .education .content-wrap {
+    align-items: center;
     padding: 20px 10px;
   }
 
