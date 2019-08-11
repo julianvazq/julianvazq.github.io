@@ -180,6 +180,11 @@ footer {
   display: inline-block;
 }
 
+.contact-info i {
+  color: #ecebf3;
+  padding-right: 0.15em;
+}
+
 .contact-info a:hover,
 .contact-info a:focus {
   transform: scale(1.05);
@@ -311,8 +316,8 @@ footer {
   border-radius: 5px;
   -webkit-transition-property: all;
   transition-property: all;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
   position: relative;
   mix-blend-mode: screen;
   letter-spacing: 0.1em;
@@ -336,8 +341,8 @@ footer {
   cursor: pointer;
   -webkit-transition-property: all;
   transition-property: all;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
 .web-projects-title {
@@ -357,7 +362,7 @@ footer {
   margin: 2em 1em;
   text-align: center;
   box-shadow: 11px 16px 41px -6px rgba(0, 0, 0, 0.71);
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(199, 214, 213, 0.7);
   width: 43%;
 }
 
