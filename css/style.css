@@ -434,7 +434,6 @@ figcaption {
   transition: transform 0.35s;
   -webkit-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
-  /* box-shadow: inset 0px -1px 20px 2px rgb(47, 47, 47); */
   border-bottom: #c7d6d5 solid 1px;
 }
 
@@ -474,12 +473,12 @@ figure h5 i {
 .web-project-box:hover .demo-code,
 .web-project-box:focus .demo-code {
   opacity: 1;
-  transition: 0.3s ease-in 1s, 0.3s ease-out 1s;
+  transition: 0.3s ease-in, 0.3s ease-out 1s;
 }
 
 .demo-code-scroll {
   opacity: 1;
-  transition: 0.3s ease-in 1s, 0.3s ease-out 1s;
+  transition: 0.3s ease-in 0s, 0.3s ease-out 1s;
 }
 
 .demo-code a {
@@ -591,13 +590,6 @@ header p a::after {
 
 /* Media Queries
   -------------------------*/
-
-@media (min-width: 1178px) {
-  .web-project-box {
-    width: 30%;
-    flex-wrap: nowrap;
-  }
-}
 
 @media (min-width: 900px) {
   .col-narrow {
