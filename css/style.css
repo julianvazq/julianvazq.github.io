@@ -386,12 +386,6 @@ footer {
   transition: 0.5s ease-in, 0.5s ease-out;
 }
 
-.web-project-box:hover a,
-.web-project-box:focus a {
-  opacity: 1;
-  transition: 0.3s ease-in 0.3s, 0.3s ease-out 0.3s;
-}
-
 .web-project-box h4 {
   font-size: 1.7rem;
   padding: 0.5em;
@@ -464,6 +458,7 @@ figure h5 i {
   transform: translate(-50%, -50%);
   font-size: 1.5rem;
   opacity: 0;
+  visibility: hidden;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s ease-out;
   transform: translate3d(0, 0, 0);
@@ -472,6 +467,7 @@ figure h5 i {
 .web-project-box:hover .demo-code,
 .web-project-box:focus .demo-code {
   opacity: 1;
+  visibility: visible;
   transition: 0.3s ease-out 0.8s;
 }
 
@@ -487,6 +483,7 @@ figure h5 i {
   padding: 0.5em;
   border: solid 4px #c7d6d5;
   font-weight: bold;
+  transition: all 0.3s ease-in;
 }
 
 .demo-code a:first-of-type {
