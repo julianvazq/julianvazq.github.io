@@ -59,6 +59,9 @@ if ("IntersectionObserver" in window) {
           entry.target.children[0].children[1].children[0].classList.remove(
             "fig-hover-effect"
           );
+          entry.target.children[0].children[2].classList.remove(
+            "demo-code-scroll"
+          );
         }
       });
     },
