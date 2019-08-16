@@ -46,7 +46,7 @@ if ("IntersectionObserver" in window) {
             "fig-hover-effect"
           );
           //Demo-View Code box
-          entry.target.children[0].children[1].children[2].classList.add(
+          entry.target.children[0].children[2].classList.add(
             "demo-code-scroll"
           );
         } else {
