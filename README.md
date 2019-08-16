@@ -1,6 +1,6 @@
 # PERSONAL PORTFOLIO
 
-# Tools 
+## Tools 
 * HTML
 * CSS
   * Flexbox
