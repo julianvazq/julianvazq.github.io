@@ -373,12 +373,12 @@ footer {
   border: 0;
   width: 100%;
   height: auto;
+  transition: 0.5s ease-in, 0.5s ease-out;
 }
 
 .web-project-box:hover .web-project-img,
 .web-project-box:focus .web-project-img {
   filter: brightness(0.1);
-  transition: 0.5s ease-in, 0.5s ease-out;
 }
 
 .web-project-box-scroll {
@@ -414,12 +414,12 @@ figure {
 .web-project-box:hover h5,
 .web-project-box:focus h5 {
   transform: translate3d(0, 0, 0);
-  transition-delay: 0.4s;
+  transition-delay: 0.5s;
 }
 
 .fig-hover-effect {
   transform: translate3d(0, 0, 0);
-  transition-delay: 0.4s;
+  transition-delay: 0.5s;
 }
 
 figcaption {
@@ -427,7 +427,7 @@ figcaption {
   width: 100%;
   top: 0;
   bottom: auto;
-  padding: 0.5em 0.5em 0 0.5em;
+  padding: 0;
   height: 3.75em;
   background: black;
   -webkit-transition: -webkit-transform 0.35s;
@@ -437,7 +437,7 @@ figcaption {
   border-bottom: #c7d6d5 solid 1px;
 }
 
-figcaption a {
+figure a {
   color: #c7d6d5;
 }
 
@@ -447,7 +447,7 @@ figure h5 {
   align-items: baseline;
   transition: transform 0.35s;
   transform: translate3d(100%, 0, 0);
-  margin: 0;
+  margin: 0.5em;
   font-size: 1.5em;
 }
 
@@ -456,39 +456,41 @@ figure h5 i {
 }
 
 .demo-code {
-  padding: 1em;
+  position: absolute;
+  width: 100%;
   color: #c7d6d5;
   text-transform: none;
-  font-size: 90%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
   opacity: 0;
   -webkit-transition: opacity 0.35s;
-  transition: opacity 0.35s;
+  transition: opacity 0.35s ease-out;
   transform: translate3d(0, 0, 0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .web-project-box:hover .demo-code,
 .web-project-box:focus .demo-code {
   opacity: 1;
-  transition: 0.3s ease-in, 0.3s ease-out 1s;
+  transition: 0.3s ease-out 0.8s;
 }
 
 .demo-code-scroll {
   opacity: 1;
-  transition: 0.3s ease-in 0s, 0.3s ease-out 1s;
+  transition: 0.3s ease-out 0.8s;
 }
 
 .demo-code a {
   display: block;
   width: 70%;
-  margin-top: 1rem;
-  padding: 0.5rem;
+  margin: 0 auto;
+  padding: 0.5em;
   border: solid 4px #c7d6d5;
   font-weight: bold;
-  font-size: 1em;
+}
+
+.demo-code a:first-of-type {
+  margin-bottom: 1em;
 }
 
 .demo-code a:hover,
@@ -604,6 +606,11 @@ header p a::after {
     transform: scaleY(1.055);
   }
 
+  figure h5 {
+    font-size: 2em;
+    margin: 0.3em;
+  }
+
   .education {
     background: linear-gradient(
         rgba(152, 155, 153, 0.8),
@@ -625,6 +632,10 @@ header p a::after {
 
   .project-box p {
     text-align: center;
+  }
+
+  .demo-code {
+    font-size: 1.2rem;
   }
 
   .general-projects h4 {
@@ -690,17 +701,16 @@ header p a::after {
     font-size: 6vw;
   }
 
+  figure h5 {
+    margin: 0.3em;
+  }
+
   figcaption {
     height: 2.75em;
   }
 
   .demo-code {
-    height: 3em;
-    margin-top: 2em;
-  }
-
-  .demo-code a:last-child {
-    margin-top: 1.5em;
+    font-size: 1.7rem;
   }
 
   .project .content-wrap {
@@ -803,5 +813,9 @@ header p a::after {
     font-size: 0.9em;
     margin: 0;
     padding: 0;
+  }
+
+  .demo-code {
+    font-size: 1.3rem;
   }
 }
