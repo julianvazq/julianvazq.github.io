@@ -11,6 +11,8 @@ if ("IntersectionObserver" in window) {
     entries.forEach(entry => {
       if (!entry.isIntersecting) {
         nav.classList.add("nav-scrolled");
+        nav.classList.add("nav-skew");
+        document.querySelector(".menu").classList.add("menu-skew");
       } else {
         nav.classList.remove("nav-scrolled");
       }
