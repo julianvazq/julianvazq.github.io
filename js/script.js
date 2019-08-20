@@ -13,6 +13,10 @@ if ("IntersectionObserver" in window) {
         nav.classList.add("nav-scrolled");
         nav.classList.add("nav-skew");
         document.querySelector(".menu").classList.add("menu-skew");
+        setTimeout(
+          () => (nav.style.transition = "background 0.4s ease-in"),
+          2000
+        );
       } else {
         nav.classList.remove("nav-scrolled");
       }

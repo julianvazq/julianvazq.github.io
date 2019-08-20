@@ -610,18 +610,21 @@ header p a::after {
   or (clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw))) {
   @media only screen and (min-width: 900px) {
     /* nav */
+
+    nav {
+      padding-top: 6em;
+      margin-top: -6em;
+    }
     .nav-skew {
       transform: skewY(-3deg);
       transform-origin: top right;
-      padding-top: 4em;
-      margin-top: -5em;
-      transition: transform 0.3s ease-in, margin-top 0s ease-in;
+      transition: transform 0.5s ease-in, background 0.5s 2s ease-in;
     }
 
     /* .menu */
     .menu-skew {
       transform: translateX(-20%);
-      transition: transform 1s 0.2s ease-in;
+      transition: transform 1s 0.5s ease-in;
     }
   }
 
