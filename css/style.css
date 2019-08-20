@@ -489,6 +489,7 @@ figure h5 i {
 
 .demo-code-scroll {
   opacity: 1;
+  visibility: visible;
   transition: 0.3s ease-out 0.8s;
 }
 
