@@ -96,9 +96,27 @@ header {
   border-top: solid black;
 }
 
+header h2 {
+  padding-bottom: 0.6em;
+  border-bottom: #ecebf3 solid;
+}
+
 header .content-wrap p {
-  border-top: #ecebf3 solid;
   padding-top: 0.6em;
+  position: relative;
+  z-index: 1;
+  padding: 1em;
+}
+
+header .content-wrap p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
 }
 
 .download:hover {
@@ -608,9 +626,9 @@ header p a::after {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw))
   )
   or (clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw))) {
+  /* ONLY > 900px */
   @media only screen and (min-width: 900px) {
     /* nav */
-
     nav {
       padding-top: 6em;
       margin-top: -6em;
@@ -626,12 +644,22 @@ header p a::after {
       transform: translateX(-20%);
       transition: transform 1s 0.5s ease-in;
     }
+
+    header {
+      /* padding-bottom: 1em; */
+      padding-top: 5em;
+    }
+
+    header .content-wrap {
+      transform: skewY(-3deg);
+    }
   }
 
   header {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%);
-    padding-bottom: 5em;
+    padding-bottom: 4em;
+    padding-top: 5em;
   }
 
   .project {
