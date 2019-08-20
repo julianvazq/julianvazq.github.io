@@ -629,6 +629,7 @@ header p a::after {
   }
 
   header {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%);
     padding-bottom: 5em;
   }
@@ -643,6 +644,7 @@ header p a::after {
     border-top: none;
     margin-top: -5vw;
     padding-bottom: 4em;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%);
   }
 
