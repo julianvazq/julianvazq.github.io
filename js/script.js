@@ -94,9 +94,12 @@ if (document.documentElement.clientWidth < 900) {
       e.target.parentElement != null &&
       e.target.parentElement.className !== "web-project-box"
     ) {
-      /* Remove project box img opacity added by IntersectionObserver page scroll */
+      /* Remove project box img opacity and demo/view code added by IntersectionObserver page scroll */
       document.querySelectorAll(".web-project-img").forEach(img => {
         img.classList.remove("web-project-box-scroll");
+      });
+      document.querySelectorAll("demo-code").forEach(box => {
+        box.classList.remove("demo-code-scroll");
       });
       /* ----------------------------------------------------------*/
       let figcaps = document.querySelectorAll("figcaption");
