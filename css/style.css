@@ -587,6 +587,7 @@ figure h5 i {
   letter-spacing: 0.1em;
   z-index: 1;
   padding: 1em;
+  mix-blend-mode: multiply;
 }
 
 .education-title::before {
@@ -599,7 +600,7 @@ figure h5 i {
   background: url(../images/maryland-flag.png);
   background-position: center;
   background-size: cover;
-  mix-blend-mode: color-burn;
+  mix-blend-mode: multiply;
   z-index: -1;
   border-radius: 20px;
 }
@@ -643,6 +644,7 @@ header p a::after {
     .menu-skew {
       transform: translateX(-20%);
       transition: transform 1s 0.5s ease-in;
+      position: relative;
     }
 
     header {
