@@ -98,7 +98,7 @@ if (document.documentElement.clientWidth < 900) {
       document.querySelectorAll(".web-project-img").forEach(img => {
         img.classList.remove("web-project-box-scroll");
       });
-      document.querySelectorAll("demo-code").forEach(box => {
+      document.querySelectorAll(".demo-code").forEach(box => {
         box.classList.remove("demo-code-scroll");
       });
       /* ----------------------------------------------------------*/
