@@ -222,7 +222,7 @@ footer {
 
 .contact-info a:hover,
 .contact-info a:focus {
-  transform: scale(1.05);
+  opacity: 0.7;
 }
 
 /* Work Experience 
@@ -377,6 +377,21 @@ footer {
   transition-property: all;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+}
+
+@supports not (mix-blend-mode: screen) {
+  .project-button {
+    background: white;
+    color: black;
+  }
+
+  .project-button::before {
+    background: none;
+  }
+  .project-button:hover,
+  .project-button:focus {
+    background-color: transparent;
+  }
 }
 
 .web-projects-title {
@@ -605,6 +620,16 @@ figure h5 i {
   border-radius: 20px;
 }
 
+@supports not (mix-blend-mode: multiply) {
+  .education-title {
+    background: rgba(0, 0, 0, 1);
+  }
+
+  .education-title::before {
+    opacity: 0.5;
+  }
+}
+
 .education a {
   color: #c20114;
   font-weight: bold;
@@ -623,6 +648,58 @@ header p a::after {
   opacity: 0.7;
 }
 
+/* IE 11 Code */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* Nav */
+  nav {
+    background: black;
+    color: #c20114;
+  }
+
+  /* Web projects box hover */
+  .web-project-box h4 {
+    border-top: 2px solid black;
+  }
+
+  .web-project-box:hover .web-project-img,
+  .web-project-box:focus .web-project-img {
+    opacity: 0;
+  }
+
+  .demo-code a {
+    color: black;
+  }
+
+  /* General projects button */
+  .project-button {
+    background: white;
+    color: black;
+  }
+
+  .project-button::before {
+    background: none;
+  }
+  .project-button:hover,
+  .project-button:focus {
+    background-color: transparent;
+  }
+
+  /* Education */
+  .education .content-wrap > * {
+    max-width: 600px;
+  }
+
+  .education-title {
+    background: black;
+    color: white;
+  }
+
+  .education-title::before {
+    opacity: 0.5;
+  }
+}
+
+/* Non-rectangular sections */
 @supports (
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw))
   )
