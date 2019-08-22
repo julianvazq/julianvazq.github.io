@@ -51,7 +51,7 @@ h5 {
 
 h1 {
   font-size: 80px;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 h2 {
@@ -342,7 +342,6 @@ footer {
 .project-button {
   color: black;
   background: none;
-  font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
   border: 2px solid white;
   padding: 10px;
@@ -551,12 +550,10 @@ figure h5 i {
 }
 
 .css3 {
-  font-family: "Baloo Chettan", cursive;
   color: #282888;
 }
 
 .js {
-  font-family: "Darker Grotesque", sans-serif;
   color: #c3c317;
 }
 
@@ -615,7 +612,7 @@ figure h5 i {
   background: url(../images/maryland-flag.png);
   background-position: center;
   background-size: cover;
-  mix-blend-mode: multiply;
+  mix-blend-mode: color-burn;
   z-index: -1;
   border-radius: 20px;
 }
