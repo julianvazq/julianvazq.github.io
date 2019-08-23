@@ -17,8 +17,8 @@ html {
   box-sizing: inherit;
 }
 
-/* Gloabal Styles
-  ------------------------------*/
+/* ===== Global Styles =====
+   ========================= */
 
 a {
   color: #c20114;
@@ -39,7 +39,8 @@ footer .content-wrap {
   max-width: 1200px;
 }
 
-/* Typography */
+/* ======= Typography ======
+   ========================= */
 
 h1,
 h2,
@@ -81,7 +82,8 @@ footer {
   color: #ecebf3;
 }
 
-/* Header */
+/* ========= Header ========
+   ========================= */
 header img {
   border-radius: 50%;
   margin-top: 1.3em;
@@ -149,8 +151,8 @@ header .content-wrap a:hover {
   color: #efff0a;
 }
 
-/* Navigation
-  -----------------------------*/
+/* ======= Navigation ======
+   ========================= */
 nav {
   --background: #ecebf3;
   --links: #c20114;
@@ -167,9 +169,9 @@ nav {
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Switches color codes on scroll + JS */
+/* Switches color codes on scroll with JS */
 .nav-scrolled {
-  --background: #0c120c;
+  --background: rgba(12, 18, 12, 0.97);
   --hover: #ecebf3;
 }
 
@@ -203,7 +205,12 @@ nav a:focus {
   color: var(--hover);
 }
 
-/*Footer */
+.close-menu {
+  display: none;
+}
+
+/* ======== Footer =========
+   ========================= */
 
 footer {
   text-align: center;
@@ -225,8 +232,8 @@ footer {
   opacity: 0.7;
 }
 
-/* Work Experience 
-  -----------------------------*/
+/* ======= Projects ========
+   ========================= */
 .project {
   border-top: solid black;
   background-image: linear-gradient(20deg, #236d7d 40%, #c20114 100%);
@@ -557,8 +564,8 @@ figure h5 i {
   color: #c3c317;
 }
 
-/* Education
-  -----------------------------*/
+/* ====== Education ========
+   ========================= */
 .education {
   background: linear-gradient(
       rgba(152, 155, 153, 0.8),
@@ -715,10 +722,9 @@ header p a::after {
     }
 
     /* .menu */
-    .menu-skew {
+    .menu-translate {
       transform: translateX(-20%);
       transition: transform 1s 0.5s ease-in;
-      position: relative;
     }
 
     header {
@@ -726,8 +732,19 @@ header p a::after {
       padding-top: 5em;
     }
 
-    header .content-wrap {
+    .close-menu {
+      display: block;
+      float: right;
+      opacity: 0;
       transform: skewY(-3deg);
+      transition: opacity 0.3s ease-in;
+      padding: 0;
+      font-size: 1.5rem;
+      transform: translate(-20px, 10px);
+    }
+
+    .close-menu-appear {
+      opacity: 1;
     }
   }
 
@@ -748,8 +765,9 @@ header p a::after {
     border-top: none;
     margin-top: -5vw;
     padding-bottom: 4em;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%);
+    /* -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%); */
+    /* clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%); */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
   }
 
   footer {

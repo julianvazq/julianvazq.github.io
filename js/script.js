@@ -1,4 +1,6 @@
-//Nav change theme color on scroll
+let userClosedMenu = false;
+
+//Nav change theme color on scroll + skew
 if ("IntersectionObserver" in window) {
   const nav = document.querySelector("nav");
   const header = document.querySelector("header");
@@ -11,12 +13,16 @@ if ("IntersectionObserver" in window) {
     entries.forEach(entry => {
       if (!entry.isIntersecting) {
         nav.classList.add("nav-scrolled");
-        nav.classList.add("nav-skew");
-        document.querySelector(".menu").classList.add("menu-skew");
-        setTimeout(
-          () => (nav.style.transition = "background 0.4s ease-in"),
-          2000
-        );
+        if (!userClosedMenu) {
+          nav.classList.add("nav-skew");
+          document.querySelector(".menu").classList.add("menu-translate");
+        }
+        setTimeout(() => {
+          nav.style.transition = "background 0.4s ease-in";
+          document
+            .querySelector(".close-menu")
+            .classList.add("close-menu-appear");
+        }, 2000);
       } else {
         nav.classList.remove("nav-scrolled");
       }
@@ -24,6 +30,17 @@ if ("IntersectionObserver" in window) {
   }, navOptions);
 
   observerNav.observe(header);
+
+  //Nav unskew on user input
+
+  document.querySelector(".close-menu").addEventListener("click", function() {
+    nav.classList.remove("nav-skew");
+    document.querySelector(".menu").classList.remove("menu-translate");
+    //Fade out then stop being clickable
+    this.style.opacity = 0;
+    setTimeout(() => (this.style.visibility = "hidden"), 500);
+    userClosedMenu = true;
+  });
 
   if (document.documentElement.clientWidth < 636) {
     const boxOptions = {
