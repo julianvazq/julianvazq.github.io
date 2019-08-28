@@ -13,16 +13,16 @@ if ("IntersectionObserver" in window) {
     entries.forEach(entry => {
       if (!entry.isIntersecting) {
         nav.classList.add("nav-scrolled");
-        if (!userClosedMenu) {
-          nav.classList.add("nav-skew");
-          document.querySelector(".menu").classList.add("menu-translate");
-        }
-        setTimeout(() => {
-          nav.style.transition = "background 0.4s ease-in";
-          document
-            .querySelector(".close-menu")
-            .classList.add("close-menu-appear");
-        }, 2000);
+        // if (!userClosedMenu) {
+        //   nav.classList.add("nav-skew");
+        //   document.querySelector(".menu").classList.add("menu-translate");
+        // }
+        // setTimeout(() => {
+        //   nav.style.transition = "background 0.4s ease-in";
+        //   document
+        //     .querySelector(".close-menu")
+        //     .classList.add("close-menu-appear");
+        // }, 2000);
       } else {
         nav.classList.remove("nav-scrolled");
       }
@@ -96,7 +96,23 @@ if ("IntersectionObserver" in window) {
   }
 }
 
+if (document.documentElement.clientWidth > 900) {
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      if (!userClosedMenu) {
+        document.querySelector("nav").classList.add("nav-skew");
+        document.querySelector(".menu").classList.add("menu-translate");
+      }
+    }, 1500);
+
+    setTimeout(() => {
+      document.querySelector(".close-menu").classList.add("close-menu-appear");
+    }, 3300);
+  });
+}
+
 /* ----- Project web boxes ----- */
+
 //Web project box hover effects on mobile (screen width < 900)
 if (document.documentElement.clientWidth < 900) {
   //Add hover effect on click
