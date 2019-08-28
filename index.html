@@ -11,6 +11,7 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto+Condensed&display=swap"
       rel="stylesheet"
@@ -193,7 +194,7 @@
           <!-- Other Projects -->
           <section class="general-projects">
             <h3>Other Projects</h3>
-            <div class="project-box">
+            <div class="project-box" data-aos="fade-right">
               <!-- PROJECT 1 -->
               <div class="col-narrow center">
                 <h4>MySQL: <br />Database Modeling</h4>
@@ -219,7 +220,7 @@
               </div>
             </div>
 
-            <div class="project-box">
+            <div class="project-box" data-aos="fade-left">
               <!-- PROJECT 2 -->
               <div class="col-narrow center">
                 <h4>Python: Web Crawler</h4>
@@ -253,7 +254,7 @@
               </div>
             </div>
 
-            <div class="project-box">
+            <div class="project-box" data-aos="fade-right">
               <!-- PROJECT 3 -->
               <div class="col-narrow center">
                 <h4>R: Statistical Analysis</h4>
@@ -292,7 +293,7 @@
               </div>
             </div>
 
-            <div class="project-box">
+            <div class="project-box" data-aos="fade-left">
               <!-- PROJECT 4 -->
               <div class="col-narrow center">
                 <h4>UX: User-Centered Design</h4>
@@ -389,5 +390,12 @@
     </footer>
     <script src="js/intersection-observer-polyfill.js"></script>
     <script src="js/script.js" async></script>
+    <!-- Animation on scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000
+      });
+    </script>
   </body>
 </html>
