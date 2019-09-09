@@ -1,401 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Julian Vazquez | Portfolio</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto+Condensed&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <nav>
-      <a class="close-menu"><i class="fas fa-angle-double-up"></i></a>
-      <label for="toggle"><i class="fas fa-bars"></i></label>
-      <input type="checkbox" name="checkbox" id="toggle" />
-      <div class="menu">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-        <a href="julian_vazquez_resume.pdf" target="_blank" download>Resume</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Julian Vazquez | Portfolio</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto+Condensed&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <nav>
+    <a class="close-menu"><i class="fas fa-angle-double-up"></i></a>
+    <label for="toggle"><i class="fas fa-bars"></i></label>
+    <input type="checkbox" name="checkbox" id="toggle" />
+    <div class="menu">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+      <a href="julian_vazquez_resume.pdf" target="_blank" download>Resume</a>
+    </div>
+  </nav>
+  <!-- // Intro -->
+  <header id="about">
+    <div class="content-wrap">
+      <img src="images/julian_vazquez_1.jpg" alt="Julian Vazquez" class="img col-narrow" />
+      <div class="col-wide">
+        <h1>Julian Vazquez</h1>
+        <h2>
+          Senior at
+          <span class="university-text">University</span>
+          <span class="of-text">of</span>
+          <span class="maryland-text">Maryland</span>
+        </h2>
+        <p>
+          I am a fourth year
+          <a href="https://ischool.umd.edu/infosci-careers" target="_blank">Information Science</a>
+          undergraduate student at University of Maryland, pursuing a minor in
+          Sustainability Studies. Over the past few years I have gained
+          experience in a variety of areas, including database modeling,
+          object-oriented programming, information organization, user
+          experience and web development.
+        </p>
       </div>
-    </nav>
-    <!-- // Intro -->
-    <header id="about">
+    </div>
+  </header>
+
+  <main>
+    <!-- // Projects -->
+    <section id="projects" class="project">
       <div class="content-wrap">
-        <img
-          src="images/julian_vazquez_1.jpg"
-          alt="Julian Vazquez"
-          class="img col-narrow"
-        />
-        <div class="col-wide">
-          <h1>Julian Vazquez</h1>
-          <h2>
-            Senior at
-            <span class="university-text">University</span>
-            <span class="of-text">of</span>
-            <span class="maryland-text">Maryland</span>
-          </h2>
-          <p>
-            I am a fourth year
-            <a href="https://ischool.umd.edu/infosci-careers" target="_blank"
-              >Information Science</a
-            >
-            undergraduate student at University of Maryland, pursuing a minor in
-            Sustainability Studies. Over the past few years I have gained
-            experience in a variety of areas, including database modeling,
-            object-oriented programming, information organization, user
-            experience and web development.
-          </p>
-        </div>
+        <h2 class="uppercase">Projects</h2>
+
+        <!-- Web Projects -->
+        <section class="web-projects">
+          <h3>Web Projects</h3>
+          <div class="project-flex">
+            <div class="web-project-box" id="recipe-finder" data-aos="fade-right">
+              <figure>
+                <img class="web-project-img" src="images/recipe-finder-cropped.jpg" alt="Recipe Finder." />
+                <figcaption>
+                  <h5>
+                    <span class="html5"><i class="fab fa-html5"></i></span>
+                    <span class="css3"><i class="fab fa-css3-alt"></i></span>
+                    <span class="js"><i class="fab fa-js-square"></i></span>
+                  </h5>
+                </figcaption>
+                <div class="demo-code">
+                  <a href="https://julianvazq.github.io/recipe-finder/" target="_blank">DEMO</a>
+                  <a href="https://github.com/julianvazq/recipe-finder" target="_blank">VIEW CODE</a>
+                </div>
+              </figure>
+              <h4>Recipe Finder</h4>
+            </div>
+            <div class="web-project-box" id="exotic-pet-store" data-aos="fade-left">
+              <figure>
+                <img class="web-project-img" src="images/exotic-pet-store-cropped.jpg" alt="Store Landing Page." />
+                <figcaption>
+                  <h5>
+                    <span class="html5"><i class="fab fa-html5"></i></span>
+                    <span class="css3"><i class="fab fa-css3-alt"></i></span>
+                  </h5>
+                </figcaption>
+                <div class="demo-code">
+                  <a href="https://julianvazq.github.io/exotic-pet-store/" target="_blank">DEMO</a>
+                  <a href="https://github.com/julianvazq/exotic-pet-store/tree/gh-pages" target="_blank">VIEW CODE</a>
+                </div>
+              </figure>
+              <h4>Store Landing Page</h4>
+            </div>
+            <div class="web-project-box" id="typing-speed-tester" data-aos="fade-right">
+              <figure>
+                <img class="web-project-img" src="images/typing-speed-tester-cropped.jpg" alt="Typing Speed Test." />
+                <figcaption>
+                  <h5>
+                    <span class="html5"><i class="fab fa-html5"></i></span>
+                    <span class="css3"><i class="fab fa-css3-alt"></i></span>
+                    <span class="js"><i class="fab fa-js-square"></i></span>
+                  </h5>
+                </figcaption>
+                <div class="demo-code">
+                  <a href="https://julianvazq.github.io/typing-speed-tester/" target="_blank">DEMO</a>
+                  <a href="https://github.com/julianvazq/typing-speed-tester" target="_blank">VIEW CODE</a>
+                </div>
+              </figure>
+
+              <h4>Typing Speed Test</h4>
+            </div>
+
+            <div class="web-project-box" id="exercise-site" data-aos="fade-left">
+              <figure>
+                <img class="web-project-img" src="images/exercise-site-cropped.jpg" alt="Product Landing Page." />
+                <figcaption>
+                  <h5>
+                    <span class="html5"><i class="fab fa-html5"></i></span>
+                    <span class="css3"><i class="fab fa-css3-alt"></i></span>
+                  </h5>
+                </figcaption>
+                <div class="demo-code">
+                  <a href="https://julianvazq.github.io/exercise-site/" target="_blank">DEMO</a>
+                  <a href="https://github.com/julianvazq/exercise-site/tree/gh-pages" target="_blank">VIEW CODE</a>
+                </div>
+              </figure>
+              <h4>Product Landing Page</h4>
+            </div>
+          </div>
+        </section>
+
+        <!-- Other Projects -->
+        <section class="general-projects">
+          <h3>Other Projects</h3>
+          <div class="project-box" data-aos="fade-right">
+            <!-- PROJECT 1 -->
+            <div class="col-narrow center">
+              <h4>MySQL: <br />Database Modeling</h4>
+            </div>
+            <div class="col-wide">
+              <p>
+                Created a database of endangered species
+              </p>
+
+              <ul>
+                <li>
+                  Designed a <span>normalized entity relationship diagram</span> (ERD)
+                </li>
+                <li>Forward engineered ERD</li>
+                <li>
+                  Pulled data from Google Sheets into <span>MySQL database</span>
+                </li>
+                <li>
+                  <span>Wrote queries to gather insights</span>, such as "most common
+                  category of endagered species in each region"
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-box" data-aos="fade-left">
+            <!-- PROJECT 2 -->
+            <div class="col-narrow center">
+              <h4>Python: Web Crawler</h4>
+              <a href="https://github.com/julianvazq/python-web-crawler" target="_blank" class="project-button">Link to
+                GitHub</a>
+            </div>
+
+            <div class="col-wide">
+              <p>
+                Web scraping using the BeautifulSoup module
+              </p>
+
+              <ul>
+                <li>
+                  <span>Scraped data</span> from a science-based nutrition website
+                  (examine.com)
+                </li>
+                <li>
+                  <span>Imported module</span> to access my personal Gmail
+                  account
+                </li>
+                <li>
+                  Used Windows Task Scheduler to <span>email myself weekly a summary</span>
+                  and URL of the latests articles
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-box" data-aos="fade-right">
+            <!-- PROJECT 3 -->
+            <div class="col-narrow center">
+              <h4>R: Statistical Analysis</h4>
+              <a href="https://github.com/julianvazq/r-statistical-analysis" target="_blank" class="project-button">Link
+                to GitHub</a>
+            </div>
+
+            <div class="col-wide">
+              <p>
+                Recommendation reports based on statistical findings
+              </p>
+
+              <ul>
+                <li>
+                  Worked with <span>multiple large datasets</span>, including the General
+                  Social Survey (GSS)
+                </li>
+                <li>
+                  Imported packages/libraries in order to recode variables and
+                  simplify the analysis process
+                </li>
+                <li>
+                  <span>Created graphs</span> (scatterplots, boxplots, linear regression
+                  plot, etc.) to <span>visualize and interpret findings</span>
+                </li>
+                <li>
+                  Wrote <span>memo-style papers</span> addressed to key
+                  decision-makers to support recommendation to take or not
+                  take a course of action
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-box" data-aos="fade-left">
+            <!-- PROJECT 4 -->
+            <div class="col-narrow center">
+              <h4>UX: User-Centered Design</h4>
+              <a href="https://masterchefproject.weebly.com/" target="_blank" class="project-button">Link to project
+                site</a>
+            </div>
+
+            <div class="col-wide">
+              <p>
+                Created a fictional product as part of a team
+              </p>
+
+              <ul>
+                <li>
+                  Applied Double Diamond design process model
+                </li>
+                <li>
+                  <span>Contextual Inquiry</span>: conducted interviews and distributed
+                  surveys to understand users' needs and requirements
+                </li>
+                <li>
+                  <span>Contextual Analysis</span>: constructed work activity affinity
+                  diagram and work domain diagram
+                </li>
+                <li>
+                  <span>Design Thinking</span>: created multiple personas to represent
+                  target users
+                </li>
+                <li>
+                  <span>Ideation</span>: created sketches, storyboards and low-fidelity
+                  wireframes
+                </li>
+                <li>
+                  <span>Testing</span> conducted informal rapid evaluation with users
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <!-- // Projects -->
-      <section id="projects" class="project">
-        <div class="content-wrap">
-          <h2 class="uppercase">Projects</h2>
-
-          <!-- Web Projects -->
-          <section class="web-projects">
-            <h3>Web Projects</h3>
-            <div class="project-flex">
-              <div class="web-project-box" id="recipe-finder" data-aos="fade-right">
-                <figure>
-                  <img
-                    class="web-project-img"
-                    src="images/recipe-finder-cropped.jpg"
-                    alt="Recipe Finder."
-                  />
-                  <figcaption>
-                    <h5>
-                      <span class="html5"><i class="fab fa-html5"></i></span>
-                      <span class="css3"><i class="fab fa-css3-alt"></i></span>
-                      <span class="js"><i class="fab fa-js-square"></i></span>
-                    </h5>
-                  </figcaption>
-                  <div class="demo-code">
-                    <a
-                      href="https://julianvazq.github.io/recipe-finder/"
-                      target="_blank"
-                      >DEMO</a
-                    >
-                    <a
-                      href="https://github.com/julianvazq/recipe-finder"
-                      target="_blank"
-                      >VIEW CODE</a
-                    >
-                  </div>
-                </figure>
-                <h4>Recipe Finder</h4>
-              </div>
-              <div class="web-project-box" id="exotic-pet-store" data-aos="fade-left">
-                <figure>
-                  <img
-                    class="web-project-img"
-                    src="images/exotic-pet-store-cropped.jpg"
-                    alt="Store Landing Page."
-                  />
-                  <figcaption>
-                    <h5>
-                      <span class="html5"><i class="fab fa-html5"></i></span>
-                      <span class="css3"><i class="fab fa-css3-alt"></i></span>
-                    </h5>
-                  </figcaption>
-                  <div class="demo-code">
-                    <a
-                      href="https://julianvazq.github.io/exotic-pet-store/"
-                      target="_blank"
-                      >DEMO</a
-                    >
-                    <a
-                      href="https://github.com/julianvazq/exotic-pet-store/tree/gh-pages"
-                      target="_blank"
-                      >VIEW CODE</a
-                    >
-                  </div>
-                </figure>
-                <h4>Store Landing Page</h4>
-              </div>
-              <div class="web-project-box" id="typing-speed-tester" data-aos="fade-right">
-                <figure>
-                  <img
-                    class="web-project-img"
-                    src="images/typing-speed-tester-cropped.jpg"
-                    alt="Typing Speed Test."
-                  />
-                  <figcaption>
-                    <h5>
-                      <span class="html5"><i class="fab fa-html5"></i></span>
-                      <span class="css3"><i class="fab fa-css3-alt"></i></span>
-                      <span class="js"><i class="fab fa-js-square"></i></span>
-                    </h5>
-                  </figcaption>
-                  <div class="demo-code">
-                    <a
-                      href="https://julianvazq.github.io/typing-speed-tester/"
-                      target="_blank"
-                      >DEMO</a
-                    >
-                    <a
-                      href="https://github.com/julianvazq/typing-speed-tester"
-                      target="_blank"
-                      >VIEW CODE</a
-                    >
-                  </div>
-                </figure>
-
-                <h4>Typing Speed Test</h4>
-              </div>
-
-              <div class="web-project-box" id="exercise-site" data-aos="fade-left">
-                <figure>
-                  <img
-                    class="web-project-img"
-                    src="images/exercise-site-cropped.jpg"
-                    alt="Product Landing Page."
-                  />
-                  <figcaption>
-                    <h5>
-                      <span class="html5"><i class="fab fa-html5"></i></span>
-                      <span class="css3"><i class="fab fa-css3-alt"></i></span>
-                    </h5>
-                  </figcaption>
-                  <div class="demo-code">
-                    <a
-                      href="https://julianvazq.github.io/exercise-site/"
-                      target="_blank"
-                      >DEMO</a
-                    >
-                    <a
-                      href="https://github.com/julianvazq/exercise-site/tree/gh-pages"
-                      target="_blank"
-                      >VIEW CODE</a
-                    >
-                  </div>
-                </figure>
-                <h4>Product Landing Page</h4>
-              </div>
-            </div>
-          </section>
-
-          <!-- Other Projects -->
-          <section class="general-projects">
-            <h3>Other Projects</h3>
-            <div class="project-box" data-aos="fade-right">
-              <!-- PROJECT 1 -->
-              <div class="col-narrow center">
-                <h4>MySQL: <br />Database Modeling</h4>
-              </div>
-              <div class="col-wide">
-                <p>
-                  Created a small-size database of endangered species
-                </p>
-
-                <ul>
-                  <li>
-                    Created a normalized entity relationship diagram (ERD)
-                  </li>
-                  <li>Forward engineered ERD</li>
-                  <li>
-                    Pulled data from Google Sheets into MySQL database
-                  </li>
-                  <li>
-                    Wrote queries to gather insights, such as "most common
-                    category of endagered species in each region"
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="project-box" data-aos="fade-left">
-              <!-- PROJECT 2 -->
-              <div class="col-narrow center">
-                <h4>Python: Web Crawler</h4>
-                <a
-                  href="https://github.com/julianvazq/python-web-crawler"
-                  target="_blank"
-                  class="project-button"
-                  >Link to GitHub</a
-                >
-              </div>
-
-              <div class="col-wide">
-                <p>
-                  Web scraping using the BeautifulSoup module
-                </p>
-
-                <ul>
-                  <li>
-                    Retrieved information from a science-based nutrition website
-                    (examine.com)
-                  </li>
-                  <li>
-                    Imported email.mime.text module to access my personal Gmail
-                    account
-                  </li>
-                  <li>
-                    Used Windows Task Scheduler to email myself weekly a summary
-                    and URL of the latests articles
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="project-box" data-aos="fade-right">
-              <!-- PROJECT 3 -->
-              <div class="col-narrow center">
-                <h4>R: Statistical Analysis</h4>
-                <a
-                  href="https://github.com/julianvazq/r-statistical-analysis"
-                  target="_blank"
-                  class="project-button"
-                  >Link to GitHub</a
-                >
-              </div>
-
-              <div class="col-wide">
-                <p>
-                  Recommendation reports based on statistical findings
-                </p>
-
-                <ul>
-                  <li>
-                    Worked with multiple large datasets, including the General
-                    Social Survey (GSS)
-                  </li>
-                  <li>
-                    Imported packages/libraries in order to recode variables and
-                    simplify the analysis process
-                  </li>
-                  <li>
-                    Created graphs (scatterplots, boxplots, linear regression
-                    plot, etc.) to visualize and interpret findings
-                  </li>
-                  <li>
-                    Wrote draft memo-style papers addressed to key
-                    decision-makers to support recommendation to take or not
-                    take a course of action
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="project-box" data-aos="fade-left">
-              <!-- PROJECT 4 -->
-              <div class="col-narrow center">
-                <h4>UX: User-Centered Design</h4>
-                <a
-                  href="https://masterchefproject.weebly.com/"
-                  target="_blank"
-                  class="project-button"
-                  >Link to project site</a
-                >
-              </div>
-
-              <div class="col-wide">
-                <p>
-                  Created a fictional product as part of a team
-                </p>
-
-                <ul>
-                  <li>
-                    Applied Double Diamond design process model
-                  </li>
-                  <li>
-                    Contextual Inquiry: conducted interviews and distributed
-                    surveys to understand users' needs and requirements
-                  </li>
-                  <li>
-                    Contextual Analysis: constructed work activity affinity
-                    diagram and work domain diagram
-                  </li>
-                  <li>
-                    Design Thinking: created multiple personas to represent
-                    target users
-                  </li>
-                  <li>
-                    Ideation: created sketches, storyboards and low-fidelity
-                    wireframes
-                  </li>
-                  <li>
-                    Testing: conducted informal rapid evaluation with users
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-        </div>
-      </section>
-
-      <!-- // Education -->
-      <section id="education" class="education">
-        <div class="content-wrap">
-          <h2 class="uppercase">Education</h2>
-
-          <h3 class="education-title">University of Maryland, College Park</h3>
-
-          <p>
-            Major in
-            <a href="https://ischool.umd.edu/infosci-careers" target="_blank"
-              >Information Science</a
-            >
-          </p>
-
-          <p>
-            Minor in
-            <a
-              href="http://www.publicpolicy.umd.edu/undergraduate/academics/minors/sustainability-minor/what-can-i-do-minor"
-              target="_blank"
-              >Sustainability Studies</a
-            >
-          </p>
-
-          <p>Cumulative GPA: 3.78</p>
-        </div>
-      </section>
-    </main>
-
-    <!-- // Footer & contact info -->
-    <footer id="contact">
+    <!-- // Education -->
+    <section id="education" class="education">
       <div class="content-wrap">
-        <h2>Let's Get in Touch</h2>
+        <h2 class="uppercase">Education</h2>
 
-        <!-- Social media and contact links -->
-        <div class="contact-info">
-          <a href="mailto:julianvazquez101@gmail.com" target="_blank"
-            ><i class="fas fa-envelope"></i> julianvazquez101@gmail.com</a
-          >
-          <a href="https://linkedin.com/in/julian-vazquez/" target="_blank"
-            ><i class="fab fa-linkedin"></i> LinkedIn</a
-          >
-          <a href="https://github.com/julianvazq" target="_blank"
-            ><i class="fab fa-github"></i> GitHub</a
-          >
-        </div>
-        <p>©2019 Julian Vazquez</p>
+        <h3 class="education-title">University of Maryland, College Park</h3>
+
+        <p>
+          Major in
+          <a href="https://ischool.umd.edu/infosci-careers" target="_blank">Information Science</a>
+        </p>
+
+        <p>
+          Minor in
+          <a href="http://www.publicpolicy.umd.edu/undergraduate/academics/minors/sustainability-minor/what-can-i-do-minor"
+            target="_blank">Sustainability Studies</a>
+        </p>
+
+        <p>Cumulative GPA: 3.78</p>
       </div>
-    </footer>
-    <script src="js/intersection-observer-polyfill.js"></script>
-    <script src="js/script.js" async></script>
-    <!-- Animation on scroll -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000
-      });
-    </script>
-  </body>
+    </section>
+  </main>
+
+  <!-- // Footer & contact info -->
+  <footer id="contact">
+    <div class="content-wrap">
+      <h2>Let's Get in Touch</h2>
+
+      <!-- Social media and contact links -->
+      <div class="contact-info">
+        <a href="mailto:julianvazquez101@gmail.com" target="_blank"><i class="fas fa-envelope"></i>
+          julianvazquez101@gmail.com</a>
+        <a href="https://linkedin.com/in/julian-vazquez/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/julianvazq" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+      <p>©2019 Julian Vazquez</p>
+    </div>
+  </footer>
+  <script src="js/intersection-observer-polyfill.js"></script>
+  <script src="js/script.js" async></script>
+  <!-- Animation on scroll -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000
+    });
+  </script>
+</body>
+
 </html>
