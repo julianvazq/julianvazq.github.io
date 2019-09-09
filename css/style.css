@@ -321,8 +321,16 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* Python Web Crawler Card */
+/* UX Card */
 .project-box:nth-child(3) {
+  background-image: url(../images/ux.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Python Web Crawler Card */
+.project-box:nth-child(4) {
   background-image: url(../images/python.jpg);
   background-position: center;
   background-size: cover;
@@ -330,16 +338,8 @@ footer {
 }
 
 /* Stats Card */
-.project-box:nth-child(4) {
-  background-image: url(../images/stats.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-/* UX Card */
 .project-box:last-child {
-  background-image: url(../images/ux.jpg);
+  background-image: url(../images/stats.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -564,9 +564,7 @@ figure h5 i {
 }
 
 .project-box span {
-  /* display: inline-block; */
   color:black;
-  /* background: rgba(0,0,0,1); */
   background: white;
   border-radius: 50px;
   padding: 0 0.3em;
