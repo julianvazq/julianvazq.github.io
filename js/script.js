@@ -40,7 +40,7 @@ if ("IntersectionObserver" in window) {
     this.style.opacity = 0;
     setTimeout(() => (this.style.visibility = "hidden"), 500);
     userClosedMenu = true;
-  });
+  }, {once: true});
 
   if (document.documentElement.clientWidth < 636) {
     const boxOptions = {
